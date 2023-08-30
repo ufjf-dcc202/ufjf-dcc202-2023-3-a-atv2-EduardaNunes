@@ -1,7 +1,30 @@
 body{
-    background-color: rgb(17, 17, 17);
+    animation: colorfull 5s infinite;
 }
 
 h1,p{
     color: rgb(219, 219, 219);
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes colorfull{
+    0%{
+        background-color: rgb(31, 31, 138);
+    }
+    25%{
+        background-color: red;
+    }
+    75%{
+        background-color: rgb(0, 145, 96);
+    }
+    100%{
+        background-color: blue;
+    }
 }
